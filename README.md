@@ -29,11 +29,11 @@ A modern, production-ready starter template for building TypeScript libraries wi
 ### Using as a Template
 
 #### Option 1: GitHub Template
-Click the [Use this template](https://github.com/samhoque/bun-typescript-lib-starter/generate) button to create a new repository.
+Click the [Use this template](https://github.com/SamHoque/bun-library-starter/generate) button to create a new repository.
 
 #### Option 2: Bun Create
 ```bash
-bun create samhoque/bun-typescript-lib-starter my-awesome-lib
+bun create SamHoque/bun-library-starter my-awesome-lib
 cd my-awesome-lib
 ```
 

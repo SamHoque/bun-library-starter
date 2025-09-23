@@ -14,6 +14,7 @@ A modern, production-ready starter template for building TypeScript libraries wi
 - **Dual Module Support** - ESM and CommonJS output with proper type definitions
 - **[Biome](https://biomejs.dev/)** - Fast formatter and linter for consistent code style
 - **[ESLint](https://eslint.org/)** - Advanced linting with TypeScript and SonarJS rules
+- **[Knip](https://knip.dev/)** - Find and remove unused files, dependencies, and exports
 - **Git Hooks** - Automated quality checks via Lefthook and Commitlint
 - **Gitmoji Commits** - Structured commit messages with emoji conventions
 - **Watch Mode** - Hot rebuild during development

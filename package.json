@@ -22,8 +22,12 @@
 		"lint:fix": "eslint --config .config/eslint.config.ts . --fix",
 		"biome": "biome check .",
 		"biome:fix": "biome check --write .",
-		"check": "bun run lint && bun run biome",
-		"check:fix": "bun run lint:fix && bun run biome:fix"
+		"knip": "knip",
+		"knip:fix": "knip --fix",
+		"knip:production": "knip --production",
+		"knip:watch": "knip --watch",
+		"check": "bun run lint && bun run biome && bun run knip",
+		"check:fix": "bun run lint:fix && bun run biome:fix && bun run knip:fix"
 	},
 	"files": [
 		"dist"
@@ -54,6 +58,7 @@
 		"globals": "^16.4.0",
 		"happy-dom": "^18.0.1",
 		"jiti": "^2.6.0",
+		"knip": "^5.64.0",
 		"lefthook": "^1.13.2",
 		"typescript-eslint": "^8.44.1",
 		"vite": "^7.1.7",

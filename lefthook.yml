@@ -1,0 +1,26 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: bun run lint
+      glob: "*.{js,ts,jsx,tsx}"
+    biome:
+      run: bun run biome
+      glob: "*.{js,ts,jsx,tsx,json}"
+    knip:
+      run: bun run knip
+
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: bun run test
+    build:
+      run: bun run build
+    knip-production:
+      run: bun run knip:production
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bun commitlint --config .config/commitlint.config.ts --edit $1

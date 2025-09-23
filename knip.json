@@ -1,0 +1,24 @@
+{
+	"$schema": "https://unpkg.com/knip@5/schema.json",
+	"project": ["src/**/*.ts"],
+	"ignore": ["dist/**", "coverage/**", "**/*.d.ts"],
+	"ignoreDependencies": ["@commitlint/config-conventional"],
+	"ignoreBinaries": ["changelogithub"],
+	"ignoreExportsUsedInFile": true,
+	"eslint": {
+		"config": [".config/eslint.config.ts"]
+	},
+	"vite": {
+		"config": ["vite.config.ts"]
+	},
+	"vitest": {
+		"config": ["vitest.config.ts"],
+		"entry": ["test/**/*.test.ts"]
+	},
+	"commitlint": {
+		"config": [".config/commitlint.config.ts"]
+	},
+	"biome": {
+		"config": ["biome.json"]
+	}
+}

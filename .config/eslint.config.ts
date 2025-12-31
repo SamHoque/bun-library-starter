@@ -5,8 +5,10 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config([
 	{
-		files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
 		ignores: ["coverage/**", "dist/**"],
+	},
+	{
+		files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
 		plugins: { js },
 		languageOptions: { globals: { ...globals.browser, ...globals.node } },
 	},

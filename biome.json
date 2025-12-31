@@ -13,8 +13,7 @@
 			"*.{js,ts,json}",
 			".config/eslint.config.ts",
 			".config/commitlint.config.ts",
-			"vitest.config.ts",
-			"vite.config.ts"
+			"bunup.config.ts"
 		]
 	},
 	"formatter": {

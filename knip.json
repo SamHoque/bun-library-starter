@@ -8,11 +8,7 @@
 	"eslint": {
 		"config": [".config/eslint.config.ts"]
 	},
-	"vite": {
-		"config": ["vite.config.ts"]
-	},
-	"vitest": {
-		"config": ["vitest.config.ts"],
+	"bun": {
 		"entry": ["test/**/*.test.ts"]
 	},
 	"commitlint": {

@@ -7,8 +7,8 @@ A modern, production-ready starter template for building TypeScript libraries wi
 ### 🚀 Core Technologies
 - **[Bun](https://bun.sh)** - Fast all-in-one JavaScript runtime and toolkit
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development with strict mode enabled
-- **[Vite](https://vitejs.dev/)** - Lightning-fast build tool with optimized bundling
-- **[Vitest](https://vitest.dev/)** - Blazing fast unit testing framework
+- **[Bunup](https://bunup.dev)** - Blazing-fast build tool powered by Bun's native bundler
+- **[Bun Test](https://bun.sh/docs/cli/test)** - Bun's built-in test runner
 
 ### 🛠️ Developer Experience
 - **Dual Module Support** - ESM and CommonJS output with proper type definitions
@@ -20,8 +20,7 @@ A modern, production-ready starter template for building TypeScript libraries wi
 - **Watch Mode** - Hot rebuild during development
 
 ### 📊 Quality Assurance
-- **Test Coverage** - Built-in coverage reporting with v8
-- **UI Testing** - Interactive test UI with `@vitest/ui`
+- **Test Coverage** - Built-in coverage reporting with Bun
 - **Pre-commit Hooks** - Automatic linting and formatting on commit
 - **Pre-push Validation** - Full build and test suite before pushing
 
@@ -65,9 +64,8 @@ bun run dev          # Watch mode with auto-rebuild
 bun run build        # Production build
 
 # Testing
-bun test            # Run tests
-bun test:ui         # Interactive test UI
-bun test:coverage   # Generate coverage report
+bun test             # Run tests
+bun test --coverage  # Generate coverage report
 
 # Code Quality
 bun run lint        # Run ESLint
@@ -95,8 +93,7 @@ bun run check:fix   # Fix all auto-fixable issues
 │   └── index.d.ts          # TypeScript definitions
 ├── biome.json              # Biome formatter/linter config
 ├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite build configuration
-└── vitest.config.ts        # Vitest test configuration
+└── bunup.config.ts         # Bunup build configuration
 ```
 
 ## Configuration Details
@@ -110,11 +107,12 @@ bun run check:fix   # Fix all auto-fixable issues
   - No unused locals/parameters
   - No fallthrough cases in switch statements
 
-### Build Configuration
+### Build Configuration (Bunup)
 - Dual package support (ESM + CommonJS)
 - Automatic TypeScript declaration generation
-- Tree-shaking enabled
-- Minification in production builds
+- Auto-generated package.json exports
+- Unused dependency detection
+- License banner injection
 
 ### Code Quality Tools
 

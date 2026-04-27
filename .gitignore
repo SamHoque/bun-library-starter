@@ -1,4 +1,10 @@
-node_modules
-dist
-.idea
-coverage
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+.idea/
+.DS_Store
+coverage/
+.turbo/
